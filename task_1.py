@@ -1,5 +1,3 @@
-import datetime
-
 class OnlineSalesRegisterCollector:
     def __init__(self):
         self.__name_items = []
@@ -73,5 +71,5 @@ class OnlineSalesRegisterCollector:
         if not isinstance(telephone_number, str) or not telephone_number.isdigit():
             raise ValueError('Необходимо ввести цифры')
         if len(telephone_number) != 10:
-            raise ValueError('Необходимо ввести 10 цифр после "+7"')        
+            raise ValueError('Необходимо ввести 10 цифр после "+7"')
         return f'+7{telephone_number}'
